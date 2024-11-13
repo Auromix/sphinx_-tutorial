@@ -1,20 +1,23 @@
-.. Auromix Sphinx Tutorial documentation master file, created by
-   sphinx-quickstart on Wed Nov 13 10:57:51 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Auromix Sphinx Tutorial documentation master file
 
-Welcome to Auromix Sphinx Tutorial's documentation!
-===================================================
+🐫 Auromix Sphinx Tutorial 
+===========================================
+
+This repository provides a comprehensive guide to using Sphinx, showcasing essential `.rst` syntax examples and step-by-step instructions on building Sphinx documentation for your projects.
+
+
+- **Example Files**: `.rst` files demonstrating Sphinx syntax and formatting options.
+- **Build Guide**: Instructions for setting up and building Sphinx documentation for your project.
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table of Contents
+
+   installation
+   tutorial_rst/index
+   license
 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

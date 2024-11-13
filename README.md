@@ -37,7 +37,15 @@ cd sphinx_tutorial
 Install Sphinx and any necessary dependencies:
 
 ```bash
+# Install Sphinx
 pip install -U sphinx
+```
+
+```bash
+# Install Material Sphinx theme
+pip install git+https://github.com/bashtage/sphinx-material.git
+# Install sphinxawesome-theme
+pip install sphinxawesome-theme
 ```
 
 Check the installed version:
@@ -58,7 +66,7 @@ make html
 To view the generated documentation, use:
 
 ```bash
-xdg-open docs/_build/html/index.html
+xdg-open build/html/index.html
 ```
 
 For specific usage details and syntax demonstrations, refer to the individual `.rst` files in the `docs` directory.

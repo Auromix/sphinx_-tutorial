@@ -1,0 +1,10 @@
+.admonition.custom {
+    background-color: #f0f8ff;
+    border-left: 4px solid #0099cc;
+    padding: 10px;
+    font-size: 14px;
+}
+.admonition.custom .admonition-title {
+    color: #0099cc;
+    font-weight: bold;
+}
