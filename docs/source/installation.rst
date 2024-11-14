@@ -33,8 +33,7 @@
 
        cd docs
        make html
-       # If you want to build for github pages
-       # sphinx-build -b html source/ .
+
 
    To view the generated documentation, use:
 
@@ -43,3 +42,7 @@
        xdg-open build/html/index.html
 
    For specific usage details and syntax demonstrations, refer to the individual `.rst` files in the `docs` directory.
+
+4. **Build for github pages**
+
+
