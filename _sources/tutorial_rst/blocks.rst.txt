@@ -142,7 +142,7 @@ Steps to Customize Admonition Blocks:
 
 2. **Create a Custom CSS File**
 
-   Create a file named `custom.css` and place it in the `/static/` directory. Then, define custom styles in that file. For example:
+   Create a file named `custom.css` and place it in the `/_static/` directory. Then, define custom styles in that file. For example:
 
    .. code-block:: css
 

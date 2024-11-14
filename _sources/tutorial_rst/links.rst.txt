@@ -84,13 +84,13 @@ Images can also be linked in a similar way to external links. You can specify an
 
 Example:
 
-..  image:: ../static/auromix_name.webp
+..  image:: ../_static/auromix_name.webp
     :align: center
     :target: https://github.com/Auromix
     
 .. code-block:: rst
 
-    ..  image:: ../static/auromix_name.webp
+    ..  image:: ../_static/auromix_name.webp
         :align: center
         :target: https://github.com/Auromix
 
