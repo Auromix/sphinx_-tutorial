@@ -49,8 +49,28 @@ html_css_files = ['custom.css']  # The custom CSS file you will create
 extensions = [
     'sphinx.ext.githubpages',  
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.todo',
+    'sphinx_autodoc_typehints',
+    # 'breathe',
 ]
+autodoc_typehints = 'signature'
+
+
+# breathe_projects = {
+#     "My C++ Project": "../../docs/build/doxygen/xml"
+# }
+# breathe_default_project = "My C++ Project"
+
+
+# breathe_projects = {
+#     "your_project": "path/to/doxygen/xml/output"
+# }
+# breathe_default_project = "your_project"
+
+
 
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../scripts'))
+sys.path.insert(0, os.path.abspath('../../src'))

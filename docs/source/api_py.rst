@@ -1,5 +1,5 @@
-My Package Modules
-==================
+Python API Documentation
+========================================
 
 .. toctree::
    :maxdepth: 1
@@ -7,3 +7,4 @@ My Package Modules
    modules/module1
    modules/module2
    modules/module3
+   modules/module4

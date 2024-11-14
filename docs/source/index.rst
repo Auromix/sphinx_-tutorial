@@ -16,7 +16,8 @@ This repository provides a comprehensive guide to using Sphinx, showcasing essen
 
    installation
    tutorial_rst/index
-   api
+   api_cpp
+   api_py
    license
 
 
