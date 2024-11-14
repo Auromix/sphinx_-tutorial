@@ -7,15 +7,16 @@
 <meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="black" media="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>🐫 Auromix Sphinx Tutorial | Auromix Sphinx Tutorial  documentation</title>
-<meta content="🐫 Auromix Sphinx Tutorial | Auromix Sphinx Tutorial  documentation" property="og:title"/>
-<meta content="🐫 Auromix Sphinx Tutorial | Auromix Sphinx Tutorial  documentation" name="twitter:title"/>
+<title>🛠️ Installation | Auromix Sphinx Tutorial  documentation</title>
+<meta content="🛠️ Installation | Auromix Sphinx Tutorial  documentation" property="og:title"/>
+<meta content="🛠️ Installation | Auromix Sphinx Tutorial  documentation" name="twitter:title"/>
 <link href="static/pygments.css?v=78b98668" rel="stylesheet" type="text/css"/>
 <link href="static/theme.css?v=42baaae4" rel="stylesheet" type="text/css"/>
 <link href="static/custom.css?v=eb347ffb" rel="stylesheet" type="text/css"/>
 <link href="search.html" rel="search" title="Search"/>
 <link href="genindex.html" rel="index" title="Index"/>
-<link href="installation.html" rel="next" title="🛠️ Installation"/>
+<link href="tutorial_rst/index.html" rel="next" title="👉 Usage"/>
+<link href="index.html" rel="prev" title="🐫 Auromix Sphinx Tutorial"/>
 <script>
     <!-- Prevent Flash of wrong theme -->
       const userPreference = localStorage.getItem('darkMode');
@@ -34,7 +35,7 @@
       Skip to content
     </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
 <div class="hidden mr-4 md:flex">
-<a class="flex items-center mr-6" href="#">
+<a class="flex items-center mr-6" href="index.html">
 <img alt="Logo" class="mr-2 hidden dark:block" height="24" src="static/auromix_logo.webp" width="24"/>
 <img alt="Logo" class="mr-2 dark:hidden" height="24" src="static/auromix_logo.webp" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Auromix Sphinx Tutorial  documentation</span>
 </a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
@@ -66,15 +67,15 @@
 </div>
 </header>
 <div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
-<a class="!justify-start text-sm md:!hidden bg-background" href="#">
+<a class="!justify-start text-sm md:!hidden bg-background" href="index.html">
 <img alt="Logo" class="mr-2 hidden dark:block" height="16" src="static/auromix_logo.webp" width="16"/>
 <img alt="Logo" class="mr-2 dark:hidden" height="16" src="static/auromix_logo.webp" width="16"/><span class="font-bold text-clip whitespace-nowrap">Auromix Sphinx Tutorial  documentation</span>
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
 <div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
 <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">🛠️ Installation</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">🛠️ Installation</a></li>
 <li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="tutorial_rst/index.html">👉 Usage<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="tutorial_rst/introduction.html">Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial_rst/table_of_contents.html">Table of Contents</a></li>
@@ -101,39 +102,66 @@
 </aside>
 <main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
 <div class="w-full min-w-0 mx-auto">
+<nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+<a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="index.html">
+<span class="hidden md:inline">Auromix Sphinx Tutorial  documentation</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">🛠️ Installation</span>
+</nav>
 <div id="content" role="main">
-<section id="auromix-sphinx-tutorial">
-<h1>🐫 Auromix Sphinx Tutorial<a class="headerlink" href="#auromix-sphinx-tutorial" title="Permalink to this heading">¶</a></h1>
-<p>This repository provides a comprehensive guide to using Sphinx, showcasing essential <cite>.rst</cite> syntax examples and step-by-step instructions on building Sphinx documentation for your projects.</p>
-<ul class="simple">
-<li><p><strong>Example Files</strong>: <cite>.rst</cite> files demonstrating Sphinx syntax and formatting options.</p></li>
-<li><p><strong>Build Guide</strong>: Instructions for setting up and building Sphinx documentation for your project.</p></li>
-</ul>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">🛠️ Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial_rst/index.html">👉 Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/introduction.html">Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/table_of_contents.html">Table of Contents</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/headings.html">Headings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/paragraphs.html">Paragraphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/formats.html">Formats</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/blocks.html">Blocks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/lists.html">Lists</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/tables.html">Tables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/links.html">Links</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial_rst/comments.html">Comments</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="license.html">📜 License</a></li>
-</ul>
+<section id="installation">
+<h1>🛠️ Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h1>
+<ol class="arabic">
+<li><p><strong>Clone the Repository</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Auromix/sphinx_tutorial.git
+</span><span id="line-2"><span class="nb">cd</span><span class="w"> </span>sphinx_tutorial
+</span></code></pre></div>
 </div>
+</li>
+<li><p><strong>Install Sphinx</strong></p>
+<p>Install Sphinx and necessary dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Install Sphinx</span>
+</span><span id="line-2">pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>sphinx
+</span></code></pre></div>
+</div>
+<p>Install the required themes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="c1"># Install Material Sphinx theme</span>
+</span><span id="line-2">pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/bashtage/sphinx-material.git
+</span><span id="line-3"><span class="c1"># Install sphinxawesome-theme</span>
+</span><span id="line-4">pip<span class="w"> </span>install<span class="w"> </span>sphinxawesome-theme
+</span></code></pre></div>
+</div>
+</li>
+<li><p><strong>Build the Documentation</strong></p>
+<p>To generate the HTML files for this repository, navigate to the <cite>docs</cite> directory and run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="nb">cd</span><span class="w"> </span>docs
+</span><span id="line-2">make<span class="w"> </span>html
+</span></code></pre></div>
+</div>
+<p>To view the generated documentation, use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><code><span id="line-1">xdg-open<span class="w"> </span>build/html/index.html
+</span></code></pre></div>
+</div>
+<p>For specific usage details and syntax demonstrations, refer to the individual <cite>.rst</cite> files in the <cite>docs</cite> directory.</p>
+</li>
+<li><p><strong>Build for github pages</strong></p></li>
+</ol>
 </section>
 </div><div class="flex justify-between items-center pt-6 mt-12 border-t border-border gap-4">
+<div class="mr-auto">
+<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="index.html">
+<svg class="mr-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+        🐫 Auromix Sphinx Tutorial
+      </a>
+</div>
 <div class="ml-auto">
-<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="installation.html">
-        🛠️ Installation
+<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="tutorial_rst/index.html">
+        👉 Usage
         <svg class="ml-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <polyline points="9 18 15 12 9 6"></polyline>
 </svg>
