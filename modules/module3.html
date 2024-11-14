@@ -15,7 +15,7 @@
 <link href="../_static/custom.css?v=eb347ffb" rel="stylesheet" type="text/css"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="../genindex.html" rel="index" title="Index"/>
-<link href="../license.html" rel="next" title="📜 License"/>
+<link href="module4.html" rel="next" title="module4 module"/>
 <link href="module2.html" rel="prev" title="module2 module"/>
 <script>
     <!-- Prevent Flash of wrong theme -->
@@ -90,10 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../tutorial_rst/upload_to_online_website.html">Upload to Online Website</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../api.html">My Package Modules<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../api_cpp.html">C++ API Documentation<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="simple" x-show="expanded">
+</ul>
+</li>
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../api_py.html">Python API Documentation<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="current" x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="module1.html">module1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="module2.html">module2 module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">module3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module4.html">module4 module</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">📜 License</a></li>
@@ -116,7 +120,7 @@
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
 </a>
-<div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="../api.html">My Package Modules</a>
+<div class="mr-1">/</div><a class="hover:text-foreground overflow-hidden text-ellipsis whitespace-nowrap" href="../api_py.html">Python API Documentation</a>
 <div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">module3 module</span>
 </nav>
 <div id="content" role="main">
@@ -127,104 +131,133 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">module3.</span></span><span class="sig-name descname"><span class="pre">Calculator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Simple</span> <span class="pre">Calculator'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#module3.Calculator" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator'">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A simple calculator class to perform basic arithmetic operations.</p>
-<section id="attributes">
-<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#attributes'">¶</a></h2>
-<dl class="simple">
-<dt>name<span class="classifier">str</span></dt><dd><p>The name of the calculator.</p>
+<p>This class provides methods for basic arithmetic operations including
+addition, subtraction, multiplication, and division.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="module3.Calculator.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#module3.Calculator.name" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator.name'">¶</a></dt>
+<dd><p>The name of the calculator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+</dd></dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">(</span><span class="s2">"My Calculator"</span><span class="p">)</span>
+</span><span id="line-2"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span><span id="line-3"><span class="go">8.0</span>
+</span><span id="line-4"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="line-5"><span class="go">5.0</span>
+</span></code></pre></div>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="module3.Calculator.add">
 <span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#module3.Calculator.add" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator.add'">¶</a></dt>
 <dd><p>Return the sum of two numbers.</p>
-<section id="parameters">
-<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#parameters'">¶</a></h3>
-<dl class="simple">
-<dt>a<span class="classifier">float</span></dt><dd><p>The first number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em>) – The first number.</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – The second number.</p></li>
+</ul>
 </dd>
-<dt>b<span class="classifier">float</span></dt><dd><p>The second number.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The sum of a and b.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
 </dl>
-</section>
-<section id="returns">
-<h3>Returns<a class="headerlink" href="#returns" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#returns'">¶</a></h3>
-<dl class="simple">
-<dt>float</dt><dd><p>The sum of a and b.</p>
-</dd>
-</dl>
-</section>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="line-2"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span><span id="line-3"><span class="go">5.0</span>
+</span></code></pre></div>
+</div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="module3.Calculator.divide">
 <span class="sig-name descname"><span class="pre">divide</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#module3.Calculator.divide" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator.divide'">¶</a></dt>
 <dd><p>Return the division of two numbers.</p>
-<section id="id1">
-<h3>Parameters<a class="headerlink" href="#id1" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id1'">¶</a></h3>
-<dl class="simple">
-<dt>a<span class="classifier">float</span></dt><dd><p>The numerator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em>) – The numerator.</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – The denominator.</p></li>
+</ul>
 </dd>
-<dt>b<span class="classifier">float</span></dt><dd><p>The denominator.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The quotient of a divided by b.</p>
 </dd>
-</dl>
-</section>
-<section id="id2">
-<h3>Returns<a class="headerlink" href="#id2" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id2'">¶</a></h3>
-<dl class="simple">
-<dt>float</dt><dd><p>The quotient of a divided by b.</p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
-</dl>
-</section>
-<section id="raises">
-<h3>Raises<a class="headerlink" href="#raises" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#raises'">¶</a></h3>
-<dl class="simple">
-<dt>ValueError</dt><dd><p>If the denominator is zero.</p>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the denominator is zero.</p>
 </dd>
 </dl>
-</section>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="line-2"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="line-3"><span class="go">4.0</span>
+</span><span id="line-4"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span><span id="line-5"><span class="gt">Traceback (most recent call last):</span>
+</span><span id="line-6"><span class="w">    </span><span class="o">...</span>
+</span><span id="line-7"><span class="gr">ValueError</span>: <span class="n">Denominator cannot be zero.</span>
+</span></code></pre></div>
+</div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="module3.Calculator.multiply">
 <span class="sig-name descname"><span class="pre">multiply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#module3.Calculator.multiply" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator.multiply'">¶</a></dt>
 <dd><p>Return the product of two numbers.</p>
-<section id="id3">
-<h3>Parameters<a class="headerlink" href="#id3" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id3'">¶</a></h3>
-<dl class="simple">
-<dt>a<span class="classifier">float</span></dt><dd><p>The first number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em>) – The first number.</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – The second number.</p></li>
+</ul>
 </dd>
-<dt>b<span class="classifier">float</span></dt><dd><p>The second number.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The product of a and b.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
 </dl>
-</section>
-<section id="id4">
-<h3>Returns<a class="headerlink" href="#id4" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id4'">¶</a></h3>
-<dl class="simple">
-<dt>float</dt><dd><p>The product of a and b.</p>
-</dd>
-</dl>
-</section>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="line-2"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+</span><span id="line-3"><span class="go">10.0</span>
+</span></code></pre></div>
+</div>
 </dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="module3.Calculator.subtract">
 <span class="sig-name descname"><span class="pre">subtract</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#module3.Calculator.subtract" title="Permalink to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#module3.Calculator.subtract'">¶</a></dt>
 <dd><p>Return the difference between two numbers.</p>
-<section id="id5">
-<h3>Parameters<a class="headerlink" href="#id5" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id5'">¶</a></h3>
-<dl class="simple">
-<dt>a<span class="classifier">float</span></dt><dd><p>The first number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>float</em>) – The first number.</p></li>
+<li><p><strong>b</strong> (<em>float</em>) – The second number.</p></li>
+</ul>
 </dd>
-<dt>b<span class="classifier">float</span></dt><dd><p>The second number.</p>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The difference of a and b.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
 </dl>
-</section>
-<section id="id6">
-<h3>Returns<a class="headerlink" href="#id6" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#id6'">¶</a></h3>
-<dl class="simple">
-<dt>float</dt><dd><p>The difference of a and b.</p>
-</dd>
-</dl>
-</section>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span> <span class="o">=</span> <span class="n">Calculator</span><span class="p">()</span>
+</span><span id="line-2"><span class="gp">&gt;&gt;&gt; </span><span class="n">calc</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="line-3"><span class="go">5.0</span>
+</span></code></pre></div>
+</div>
 </dd></dl>
-</section>
 </dd></dl>
 </section>
 </div><div class="flex justify-between items-center pt-6 mt-12 border-t border-border gap-4">
@@ -237,8 +270,8 @@
       </a>
 </div>
 <div class="ml-auto">
-<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="../license.html">
-        📜 License
+<a class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors border border-input hover:bg-accent hover:text-accent-foreground py-2 px-4" href="module4.html">
+        module4 module
         <svg class="ml-2 h-4 w-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <polyline points="9 18 15 12 9 6"></polyline>
 </svg>
@@ -248,6 +281,7 @@
 <div class="sticky top-16 -mt-10 max-h-[calc(100vh-5rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
 <ul>
 <li><a :data-current="activeSection === '#module3.Calculator'" class="reference internal" href="#module3.Calculator"><code class="docutils literal notranslate"><span class="pre">Calculator</span></code></a><ul>
+<li><a :data-current="activeSection === '#module3.Calculator.name'" class="reference internal" href="#module3.Calculator.name"><code class="docutils literal notranslate"><span class="pre">Calculator.name</span></code></a></li>
 <li><a :data-current="activeSection === '#module3.Calculator.add'" class="reference internal" href="#module3.Calculator.add"><code class="docutils literal notranslate"><span class="pre">Calculator.add()</span></code></a></li>
 <li><a :data-current="activeSection === '#module3.Calculator.divide'" class="reference internal" href="#module3.Calculator.divide"><code class="docutils literal notranslate"><span class="pre">Calculator.divide()</span></code></a></li>
 <li><a :data-current="activeSection === '#module3.Calculator.multiply'" class="reference internal" href="#module3.Calculator.multiply"><code class="docutils literal notranslate"><span class="pre">Calculator.multiply()</span></code></a></li>

@@ -89,10 +89,14 @@
 <li class="toctree-l2"><a class="reference internal" href="tutorial_rst/upload_to_online_website.html">Upload to Online Website</a></li>
 </ul>
 </li>
-<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="api.html">My Package Modules<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="api_cpp.html">C++ API Documentation<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul class="simple" x-show="expanded">
+</ul>
+</li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') ? true : false }"><a :class="{ 'expanded' : expanded }" @click="expanded = !expanded" class="reference internal expandable" href="api_py.html">Python API Documentation<button @click.prevent.stop="expanded = !expanded" type="button"><span class="sr-only"></span><svg fill="currentColor" height="18px" stroke="none" viewbox="0 0 24 24" width="18px" xmlns="http://www.w3.org/2000/svg"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></button></a><ul x-show="expanded">
 <li class="toctree-l2"><a class="reference internal" href="modules/module1.html">module1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/module2.html">module2 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/module3.html">module3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/module4.html">module4 module</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">📜 License</a></li>
@@ -134,10 +138,14 @@
 <li class="toctree-l2"><a class="reference internal" href="tutorial_rst/upload_to_online_website.html">Upload to Online Website</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">My Package Modules</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="api_cpp.html">C++ API Documentation</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_py.html">Python API Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/module1.html">module1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/module2.html">module2 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/module3.html">module3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/module4.html">module4 module</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">📜 License</a></li>
