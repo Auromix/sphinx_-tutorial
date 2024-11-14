@@ -43,6 +43,5 @@
 
    For specific usage details and syntax demonstrations, refer to the individual `.rst` files in the `docs` directory.
 
-4. **Build for github pages**
 
 
